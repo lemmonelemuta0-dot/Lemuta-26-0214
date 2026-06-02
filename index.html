@@ -90,6 +90,77 @@
     <hr>
 
     <p>&copy; 2026 Smart Greenhouse Management System</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4fff4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2e7d32;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Greenhouse Photo Gallery</h2>
+
+    <div class="gallery">
+        <img src="images/greenhouse1.jpg" alt="Greenhouse Interior">
+        <img src="images/greenhouse2.jpg" alt="Tomato Plants">
+        <img src="images/greenhouse3.jpg" alt="Irrigation System">
+        <img src="images/greenhouse4.jpg" alt="Vegetable Production">
+    </div>
+
+    <h2>Greenhouse Video Tour</h2>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Greenhouse Video"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
 
 </body>
 </html>
