@@ -93,113 +93,98 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenhouse Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenhouse Gallery</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4fff4;
-            margin: 0;
-            padding: 20px;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f9f4;
+    }
 
-        h2 {
-            text-align: center;
-            color: #2e7d32;
-        }
+    .section {
+        padding: 50px 20px;
+        text-align: center;
+    }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-bottom: 40px;
-        }
+    h2 {
+        color: #2e7d32;
+        margin-bottom: 25px;
+    }
 
-        .gallery img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+    /* Photo Gallery */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        max-width: 1200px;
+        margin: auto;
+    }
 
-        .video-container {
-            max-width: 900px;
-            margin: auto;
-        }
+    .gallery img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Video */
+    .video-container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
         .video-container iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 10px;
+            height: 300px;
         }
-    </style>
+    }
+</style>
 </head>
 <body>
 
-    <h2>Greenhouse Photo Gallery</h2>
+<!-- PHOTO GALLERY -->
+<section class="section">
+    <h2>Our Greenhouse Gallery</h2>
 
     <div class="gallery">
-        <img src="images/greenhouse1.jpg" alt="Greenhouse Interior">
-        <img src="images/greenhouse2.jpg" alt="Tomato Plants">
-        <img src="images/greenhouse3.jpg" alt="Irrigation System">
-        <img src="images/greenhouse4.jpg" alt="Vegetable Production">
-    </div>
-
-    <h2>Greenhouse Video Tour</h2>
-
-    <div class="video-container">
-        <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="Greenhouse Video"
-            allowfullscreen>
-        </iframe>
-    </div>
-    <section class="gallery">
-    <h2>Our Greenhouse</h2>
-
-    <div class="gallery-grid">
         <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="Greenhouse">
         <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" alt="Plants">
         <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="Vegetables">
-        <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=800" alt="Tomato Farm">
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="Green Crops">
+        <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=800" alt="Tomatoes">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="Crops">
         <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?w=800" alt="Modern Greenhouse">
     </div>
 </section>
 
-<style>
-.gallery {
-    padding: 50px 20px;
-    text-align: center;
-}
+<!-- VIDEO SECTION -->
+<section class="section">
+    <h2>Watch Our Greenhouse Tour</h2>
 
-.gallery h2 {
-    color: #2e7d32;
-    margin-bottom: 20px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-</style>
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/eTUCV0v1WQ4"
+            title="Greenhouse Tour"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
 
 </body>
 </html>
