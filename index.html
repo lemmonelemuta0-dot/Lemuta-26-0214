@@ -1,101 +1,306 @@
 ```html
-<!-- ABOUT THE WEBSITE -->
-<hr>
-
-<section class="section">
-    <h2>What Our Website Offers</h2>
-
-    <p style="max-width:900px; margin:auto; line-height:1.8;">
-        The Smart Greenhouse Management System is designed to help farmers
-        and greenhouse managers improve productivity through better planning
-        and monitoring. The platform provides crop management tools, greenhouse
-        condition tracking, record keeping, and farming support information.
-        It enables users to monitor crop growth, schedule planting and harvesting,
-        maintain accurate greenhouse records, and promote sustainable agricultural
-        practices for higher yields and healthier crops.
-    </p>
-</section>
-
-<hr>
-
-<!-- ADDITIONAL TABLE -->
-<section class="section">
-    <h2>Greenhouse Maintenance Schedule</h2>
-
-    <table border="1" cellpadding="10" cellspacing="0"
-           style="margin:auto; border-collapse:collapse; width:90%; max-width:900px;">
-        <tr style="background-color:#2e7d32; color:white;">
-            <th>Activity</th>
-            <th>Frequency</th>
-            <th>Responsible</th>
-            <th>Status</th>
-        </tr>
-
-        <tr>
-            <td>Watering Crops</td>
-            <td>Daily</td>
-            <td>Farm Manager</td>
-            <td>Active</td>
-        </tr>
-
-        <tr>
-            <td>Temperature Check</td>
-            <td>Every 6 Hours</td>
-            <td>System Monitor</td>
-            <td>Active</td>
-        </tr>
-
-        <tr>
-            <td>Soil Testing</td>
-            <td>Weekly</td>
-            <td>Technician</td>
-            <td>Scheduled</td>
-        </tr>
-
-        <tr>
-            <td>Equipment Maintenance</td>
-            <td>Monthly</td>
-            <td>Maintenance Team</td>
-            <td>Pending</td>
-        </tr>
-    </table>
-</section>
-
-<hr>
-
-<!-- KEEP ONLY THIS VIDEO -->
-<section class="section">
-    <h2>Greenhouse Educational Video</h2>
-
-    <div class="video-container">
-        <iframe
-            width="100%"
-            height="500"
-            src="https://www.youtube.com/embed/KI-Wf2odCqM?start=107"
-            title="Greenhouse Video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Greenhouse Management System</title>
 
 <style>
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    background:#f4f9f4;
+    color:#333;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+section{
+    padding:40px 20px;
+}
+
+h2{
+    color:#2e7d32;
+    text-align:center;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#2e7d32;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
 .video-container{
     max-width:900px;
-    margin:30px auto;
+    margin:auto;
 }
 
 .video-container iframe{
+    width:100%;
+    height:500px;
     border:none;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    border-radius:10px;
 }
 
-.section{
-    padding:40px 20px;
+footer{
+    background:#2e7d32;
+    color:white;
     text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
 </style>
-```
 
+</head>
+<body>
+
+<header>
+    <h1>Smart Greenhouse Management System</h1>
+    <p>Improving Agriculture Through Technology and Sustainable Farming</p>
+</header>
+
+<section>
+<div class="container">
+
+<h2>Welcome</h2>
+
+<p>
+The Smart Greenhouse Management System helps greenhouse owners and farmers
+manage crops, monitor environmental conditions, and maintain important
+agricultural records. The website supports efficient farming by providing
+information about crop growth, irrigation, harvesting schedules, and
+greenhouse maintenance.
+</p>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>What Our Website Offers</h2>
+
+<ul>
+<li>Crop Monitoring</li>
+<li>Planting and Harvest Tracking</li>
+<li>Greenhouse Record Management</li>
+<li>Irrigation Monitoring</li>
+<li>Temperature and Humidity Tracking</li>
+<li>Farmer Support and Communication</li>
+</ul>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Crop Records</h2>
+
+<table>
+
+<tr>
+<th>Crop Name</th>
+<th>Planting Date</th>
+<th>Harvest Date</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Tomatoes</td>
+<td>01 June 2026</td>
+<td>30 August 2026</td>
+<td>Growing</td>
+</tr>
+
+<tr>
+<td>Cucumbers</td>
+<td>15 May 2026</td>
+<td>20 July 2026</td>
+<td>Growing</td>
+</tr>
+
+<tr>
+<td>Lettuce</td>
+<td>20 May 2026</td>
+<td>10 July 2026</td>
+<td>Ready for Harvest</td>
+</tr>
+
+<tr>
+<td>Spinach</td>
+<td>10 June 2026</td>
+<td>15 August 2026</td>
+<td>Growing</td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Greenhouse Maintenance Schedule</h2>
+
+<table>
+
+<tr>
+<th>Activity</th>
+<th>Frequency</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Watering</td>
+<td>Daily</td>
+<td>Active</td>
+</tr>
+
+<tr>
+<td>Temperature Check</td>
+<td>Every 6 Hours</td>
+<td>Active</td>
+</tr>
+
+<tr>
+<td>Soil Testing</td>
+<td>Weekly</td>
+<td>Scheduled</td>
+</tr>
+
+<tr>
+<td>Equipment Inspection</td>
+<td>Monthly</td>
+<td>Pending</td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Greenhouse Conditions</h2>
+
+<p><strong>Temperature:</strong> 25°C</p>
+<p><strong>Humidity:</strong> 70%</p>
+<p><strong>Soil Moisture:</strong> Good</p>
+<p><strong>Irrigation Status:</strong> Active</p>
+
+</div>
+</section>
+
+<section>
+
+<h2>Greenhouse Gallery</h2>
+
+<div class="container">
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="Greenhouse">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="Vegetables">
+
+<img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=800" alt="Tomatoes">
+
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="Plants">
+
+<img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?w=800" alt="Modern Greenhouse">
+
+<img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" alt="Fresh Crops">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Educational Greenhouse Video</h2>
+
+<div class="video-container">
+
+<iframe
+src="https://www.youtube.com/embed/KI-Wf2odCqM?start=107"
+title="Greenhouse Video"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<section>
+<div class="container">
+
+<h2>Contact Us</h2>
+
+<p><strong>Phone:</strong> 01151078914</p>
+<p><strong>Email:</strong> molibashlemmone@gmail.com</p>
+
+<h3>Office Hours</h3>
+
+<p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+<p>Saturday: 9:00 AM - 1:00 PM</p>
+<p>Sunday: Closed</p>
+
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 Smart Greenhouse Management System. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```
