@@ -9,3 +9,7 @@ setTimeout(function(){
 function closePromo(){
     document.getElementById("promoBox").style.display = "none";
 }
+document.getElementById("userForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Thank you! Your details have been submitted successfully.");
+});
