@@ -1,396 +1,159 @@
-
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Greenhouse Management System</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ✅ WELCOME POPUP -->
+<div id="welcomePopup">
+    <div class="popup-content">
+        <h2>Welcome 🌱</h2>
+        <p>Welcome to Smart Greenhouse Management System</p>
+        <button onclick="this.parentElement.parentElement.style.display='none'">Start</button>
+    </div>
+</div>
+
 <header>
-
 <h1>Smart Greenhouse Management System</h1>
-
-<p>
-Modern Farming Through Technology
-</p>
-
+<p>Modern Farming Through Technology</p>
 </header>
 
 <nav>
-
 <ul>
-
 <li><a href="#home">Home</a></li>
-
 <li><a href="#services">Services</a></li>
-
 <li><a href="#records">Crop Records</a></li>
-
- <li><a href="#products">Products</a></li>
-
+<li><a href="#products">Products</a></li>
 <li><a href="#maintenance">Maintenance</a></li>
-
 <li><a href="#gallery">Gallery</a></li>
-
 <li><a href="#video">Video</a></li>
-
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
 </nav>
+
 <section id="home">
-
 <div class="container">
-
 <h2>Welcome</h2>
-
-<p>
-Welcome to the Smart Greenhouse Management System. This website helps
-greenhouse owners manage crops, monitor greenhouse conditions,
-maintain farming records, and improve productivity through
-modern agricultural technology.
-</p>
-
-<p>
-Our goal is to support sustainable farming practices while
-making greenhouse management easier and more efficient.
-</p>
-
+<p>Welcome to the Smart Greenhouse Management System...</p>
 </div>
-
 </section>
-
 
 <section id="services">
-
 <div class="container">
-
 <h2>What Our Website Offers</h2>
-
 <ul>
-
 <li>Crop Monitoring</li>
-
 <li>Planting and Harvest Tracking</li>
-
-<li>Greenhouse Record Management</li>
-
-<li>Temperature and Humidity Monitoring</li>
-
+<li>Greenhouse Records</li>
 <li>Irrigation Management</li>
-
-<li>Farmer Support and Communication</li>
-
-<li>Greenhouse Maintenance Scheduling</li>
-
 </ul>
-
 </div>
-
 </section>
-
 
 <section id="records">
-
 <div class="container">
-
 <h2>Crop Records</h2>
-
 <table>
-
-<tr>
-<th>Crop Name</th>
-<th>Planting Date</th>
-<th>Harvest Date</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>Tomatoes</td>
-<td>01 June 2026</td>
-<td>30 August 2026</td>
-<td>Growing</td>
-</tr>
-
-<tr>
-<td>Cucumbers</td>
-<td>15 May 2026</td>
-<td>20 July 2026</td>
-<td>Growing</td>
-</tr>
-
-<tr>
-<td>Lettuce</td>
-<td>20 May 2026</td>
-<td>10 July 2026</td>
-<td>Ready for Harvest</td>
-</tr>
-
-<tr>
-<td>Spinach</td>
-<td>10 June 2026</td>
-<td>15 August 2026</td>
-<td>Growing</td>
-</tr>
-
+<tr><th>Crop</th><th>Planting</th><th>Harvest</th><th>Status</th></tr>
+<tr><td>Tomatoes</td><td>June</td><td>Aug</td><td>Growing</td></tr>
+<tr><td>Cucumbers</td><td>May</td><td>July</td><td>Growing</td></tr>
 </table>
-
 </div>
-
 </section>
-    <section id="products">
 
+<section id="products">
 <div class="container">
-
 <h2>Products for Sale</h2>
-
 <table>
-
-<tr>
-<th>Product</th>
-<th>Quantity</th>
-<th>Price</th>
-<th>Availability</th>
-</tr>
-
-<tr>
-<td>Fresh Tomatoes</td>
-<td>1 Kg</td>
-<td>Ksh 150</td>
-<td>Available</td>
-</tr>
-
-<tr>
-<td>Cucumbers</td>
-<td>1 Kg</td>
-<td>Ksh 120</td>
-<td>Available</td>
-</tr>
-
-<tr>
-<td>Lettuce</td>
-<td>1 Head</td>
-<td>Ksh 100</td>
-<td>Available</td>
-</tr>
-
-<tr>
-<td>Spinach</td>
-<td>1 Bundle</td>
-<td>Ksh 80</td>
-<td>Available</td>
-</tr>
-
-<tr>
-<td>Bell Peppers</td>
-<td>1 Kg</td>
-<td>Ksh 250</td>
-<td>Limited Stock</td>
-</tr>
-
+<tr><th>Product</th><th>Qty</th><th>Price</th><th>Status</th></tr>
+<tr><td>Tomatoes</td><td>1kg</td><td>Ksh 150</td><td>Available</td></tr>
+<tr><td>Cucumbers</td><td>1kg</td><td>Ksh 120</td><td>Available</td></tr>
 </table>
-
 </div>
-
 </section>
-
 
 <section id="maintenance">
-
 <div class="container">
-
-<h2>Greenhouse Maintenance Schedule</h2>
-
-<table>
-
-<tr>
-<th>Activity</th>
-<th>Frequency</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>Watering Crops</td>
-<td>Daily</td>
-<td>Active</td>
-</tr>
-
-<tr>
-<td>Temperature Check</td>
-<td>Every 6 Hours</td>
-<td>Active</td>
-</tr>
-
-<tr>
-<td>Soil Testing</td>
-<td>Weekly</td>
-<td>Scheduled</td>
-</tr>
-
-<tr>
-<td>Equipment Inspection</td>
-<td>Monthly</td>
-<td>Pending</td>
-</tr>
-
-</table>
-
+<h2>Maintenance Schedule</h2>
+<p>Daily watering, weekly soil testing, monthly inspection.</p>
 </div>
-
 </section>
 
-
-<section>
-
-<div class="container">
-
-<h2>Greenhouse Conditions</h2>
-
-<p><strong>Temperature:</strong> 25°C</p>
-
-<p><strong>Humidity:</strong> 70%</p>
-
-<p><strong>Soil Moisture:</strong> Good</p>
-
-<p><strong>Irrigation Status:</strong> Active</p>
-
-</div>
-
-</section>
 <section id="gallery">
-
 <div class="container">
-
-<h2>Greenhouse Gallery</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="Greenhouse">
-
-<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="Vegetables">
-
-<img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=800" alt="Tomatoes">
-
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="Plants">
-
-<img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?w=800" alt="Modern Greenhouse">
-
-<img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" alt="Fresh Crops">
-
+<h2>Gallery</h2>
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800">
 </div>
-
-</div>
-
 </section>
-
 
 <section id="video">
-
 <div class="container">
+<h2>Videos</h2>
 
-<h2>Educational Greenhouse Video</h2>
-
-<div class="video-grid">
-
-<iframe
-src="https://www.youtube.com/embed/KI-Wf2odCqM?start=107"
-title="Greenhouse Video"
-allowfullscreen>
-</iframe>
-
-<iframe
-src="https://www.youtube.com/embed/LGF33NN4B8U?start=3"
-title="Greenhouse Video 2"
-allowfullscreen>
-</iframe>
+<iframe src="https://www.youtube.com/embed/KI-Wf2odCqM?start=107"></iframe>
+<iframe src="https://www.youtube.com/embed/LGF33NN4B8U?start=3"></iframe>
 
 </div>
-
-</div>
-
 </section>
 
-
 <section id="contact">
-
 <div class="container">
 
 <h2>Contact Us</h2>
 
-<p><strong>Phone:</strong> 01151078914</p>
-
-<p><strong>Email:</strong> molibashlemmone@gmail.com</p>
-
-<h3>Office Hours</h3>
-
-<p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-
-<p>Saturday: 9:00 AM - 1:00 PM</p>
-
-<p>Sunday: Closed</p>
- <h3>Customer Registration Form</h3>
-
 <form id="userForm">
 
-    <label>Full Name:</label>
-    <input type="text" placeholder="Enter your full name" required>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone Number" required>
 
-    <label>Email:</label>
-    <input type="email" placeholder="Enter your email" required>
+<select required>
+<option value="">Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
 
-    <label>Phone Number:</label>
-    <input type="tel" placeholder="Enter phone number" required>
-
-    <label>Gender:</label>
-    <select required>
-        <option value="">Select Gender</option>
-        <option>Male</option>
-        <option>Female</option>
-        <option>Prefer not to say</option>
-    </select>
-
-    <label>Age:</label>
-    <input type="number" placeholder="Enter age">
-
-    <label>County / Location:</label>
-    <input type="text" placeholder="Enter your location">
-
-    <label>Preferred Crop:</label>
-    <input type="text" placeholder="e.g Tomatoes">
-
-    <label>Message / Inquiry:</label>
-    <textarea placeholder="Write your message here"></textarea>
-
-    <button type="submit">Submit</button>
+<button type="submit">Submit</button>
 
 </form>
-    
 
 </div>
-
 </section>
+
+<!-- ✅ PROMO POPUP -->
 <div id="promoBox">
-    <h3>Special Offer!</h3>
-    <p>20% discount on Bell Peppers today!</p>
-    <button onclick="closePromo()">Close</button>
+    <div class="popup-content">
+        <h2>Special Offer 🎁</h2>
+        <p>20% OFF Bell Peppers Today!</p>
+        <button onclick="closePromo()">Close</button>
+    </div>
+</div>
+
+<!-- ✅ SUCCESS POPUP -->
+<div id="formPopup">
+    <div class="popup-content">
+        <h2>Success 🎉</h2>
+        <p>Your details were submitted successfully.</p>
+        <button onclick="closeFormPopup()">Close</button>
+    </div>
 </div>
 
 <footer>
-
-</div>
-
+<p>&copy; 2026 Smart Greenhouse Management System</p>
 </footer>
- 
-</div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
-
 
 
 
